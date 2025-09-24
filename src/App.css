@@ -4,7 +4,7 @@ html {
 }
 
 section {
-  scroll-margin-top: 70px; /* para que el navbar fijo no tape títulos */
+  scroll-margin-top: 50px; /* para que el navbar fijo no tape títulos */
 }
 
 h1,
@@ -15,14 +15,15 @@ h3 {
 
 /* ====== Hero Section ====== */
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://via.placeholder.com/1600x900") no-repeat center center/cover;
+  background: linear-gradient(rgba(111, 111, 111, 0.6), rgba(0, 0, 0, 0.2)),
+    url("https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images-1536x1024.jpg")
+      no-repeat center center/cover;
   color: white;
   animation: fadeIn 1.2s ease-in-out;
 }
 
 #home h1 {
-  font-size: 3rem;
+  font-size: 50px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -32,8 +33,12 @@ h3 {
 
 #home .btn:hover {
   transform: scale(1.05);
-  background-color: #0d6efd;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#home i {
+  font-size: 30px;
 }
 
 /* ====== Cards de Portafolio ====== */

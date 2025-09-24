@@ -1,0 +1,115 @@
+/* ====== General ====== */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 70px; /* para que el navbar fijo no tape títulos */
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.5px;
+}
+
+/* ====== Hero Section ====== */
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://via.placeholder.com/1600x900") no-repeat center center/cover;
+  color: white;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+#home h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#home .btn {
+  transition: all 0.3s ease;
+}
+
+#home .btn:hover {
+  transform: scale(1.05);
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* ====== Cards de Portafolio ====== */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+/* ====== Botones ====== */
+.btn-primary {
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af; /* un azul más profundo */
+}
+
+/* ====== Contact Form ====== */
+form .form-control {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* ====== Footer ====== */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* ====== Animaciones ====== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+/* Animación de aparición por secciones */
+section {
+  animation: fadeIn 1.2s ease-in-out;
+}
